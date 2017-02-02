@@ -66,9 +66,7 @@ public class TimeSinceTextView extends TextView {
      */
     public void setDate(long utc) {
         mTimestamp = utc;
-        setText(
-                TimeSince.getFormattedDateString(
-                        utc, mAbbreviated, getContext()));
+        setText(TimeSince.getFormattedDateString(utc, mAbbreviated, getContext()));
     }
 
     /**
